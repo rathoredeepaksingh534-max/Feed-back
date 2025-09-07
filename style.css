@@ -1,0 +1,295 @@
+/* Global styles */
+body {
+  background-image: url('images/img3.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: rgb(157, 140, 42);
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgb(89, 66, 32);
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(152, 137, 49);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+}
+
+/* Image layout */
+img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Form layout */
+form {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Flexbox layout for input fields */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #997c29;
+  box-shadow: 0 0 5px rgba(157, 140, 42, 0.6);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+td {
+  background: #fff;
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  th, td {
+    padding: 10px;
+  }
+}
+
+/* Responsive for mobiles */
+@media (max-width: 480px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none; /* hide header row */
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+
+th, td {
+  border: 2px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  max-width: 800px;
+  height: 150px;
+  resize: vertical;
+  font-size: 15px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  padding: 12px 24px;
+  background-color: rgb(152, 137, 49);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(178, 159, 57);
+}
+
+/* Thank you message */
+.thank-you-msg {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  color: rgb(152, 137, 49);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer / About section */
+.about {
+  background-image: url("images/img4.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color:#3B0A22;
+}
+
+h3, h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+div p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive Design
+@media screen and (max-width: 768px) {
+  h1, h2 {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  table, th, td {
+    font-size: 13px;
+  }
+
+  textarea {
+    padding: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .thank-you-msg {
+    font-size: 16px;
+    padding: 15px;
+  }
+} */
