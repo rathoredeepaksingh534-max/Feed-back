@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-  background-image: url('images/img3.png');
+  background-image: url('img3.png');
   background-size: cover;
   background-position: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -243,7 +243,7 @@ input[type="submit"]:hover {
 
 /* Footer / About section */
 .about {
-  background-image: url("images/img4.jpg");
+  background-image: url("img4.jpg");
   background-size: cover;
   background-position: center;
   padding: 40px;
@@ -293,3 +293,4 @@ div p {
     padding: 15px;
   }
 } */
+
